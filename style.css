@@ -1,0 +1,31 @@
+body {
+    background-color:#925e39
+}
+/*
+menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navigation-menu-with-cs/#:~:text=How%20to%20Create%20a%20Horizontal%20Navigation%20Menu%20with,and%20margins%20of%20the%20menu%3A%20...%20Rohkem%20%C3%BCksuseid
+*/
+#menüü {
+	margin:10px;
+	width:900px;
+	font-family: sans-serif;
+}
+#menüü li {
+	display:block;
+	width:120px;
+	float:left;
+	margin-left:2px;
+	border:1px solid #000;
+}
+
+#menüü a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	background-color:#fff;
+	color:#009;
+}
+
+#menüü a:hover {
+	background-color:#009;
+	color:#fff;
+}
