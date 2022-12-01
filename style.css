@@ -4,23 +4,23 @@ body {
 
 body {
 	font-family: 'Trebuchet MS';
+	margin: 0 auto;
 }
 main {
 	text-align: left;
-	margin-left:50px;
-	margin-right:50px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 h1 {
 	text-align: center;
-	margin-left:50px;
-
 }
 /*
+veebilehe menüü, mille kaudu saab teistele lehtedele minna
 menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navigation-menu-with-cs/#:~:text=How%20to%20Create%20a%20Horizontal%20Navigation%20Menu%20with,and%20margins%20of%20the%20menu%3A%20...%20Rohkem%20%C3%BCksuseid
 */
 #menüü {
 	margin: 1px;
-	font-family: sans-serif;
+	font-family: 'Trebuchet MS';
 }
 #menüü li {
 	display: block;
@@ -44,6 +44,8 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 	color: #000;
 }
 
+/* karuvideo */
+
 #karuvideo {
 	width: 50%;
 }
@@ -53,10 +55,13 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 	margin: auto;
 }
 
+/* veebilehe footer */
+
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
-	width: 100%;
+	width: 99%;
 	height: 60px;
 	background: #81c786;
+	text-align: center;
 }
