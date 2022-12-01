@@ -1,12 +1,17 @@
 body {
     background-color: #925e39
 }
+
+body {
+	font-family: 'Trebuchet MS';
+}
 main {
 	text-align: left;
 	margin-left:50px;
 	margin-right:50px;
 }
 h1 {
+	text-align: center;
 	margin-left:50px;
 
 }
@@ -15,12 +20,11 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 */
 #menüü {
 	margin: 1px;
-	width: 1440px;
 	font-family: sans-serif;
 }
 #menüü li {
 	display: block;
-	width: 470px;
+	width: 24%;
 	float: left;
 	margin-left: 2px;
 	border: 1px solid #000;
@@ -38,4 +42,21 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 #menüü a:hover {
 	background-color: blueviolet;
 	color: #000;
+}
+
+#karuvideo {
+	width: 50%;
+}
+
+#karuvideo {
+	display: block;
+	margin: auto;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: #81c786;
 }
