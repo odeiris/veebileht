@@ -1,5 +1,5 @@
 body {
-    background-color: #925e39
+    background-color: #aa825d;
 }
 
 body {
@@ -13,6 +13,11 @@ main {
 }
 h1 {
 	text-align: center;
+	color: #123010;
+}
+
+h2 {
+	color: #224320;
 }
 /*
 veebilehe menüü, mille kaudu saab teistele lehtedele minna
@@ -35,13 +40,13 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 	display: block;
 	padding: 6px;
 	text-decoration: none;
-	background-color: #000;
-	color: navajowhite;
+	background-color: #613f20;
+	color: #e9dab8;
 }
 
 #menüü a:hover {
-	background-color: blueviolet;
-	color: #000;
+	background-color: #a2a461;
+	color: #613f20;
 }
 
 /* karuvideo */
@@ -60,8 +65,8 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 footer {
 	position: fixed;
 	bottom: 0;
-	width: 99%;
+	width: 100%;
 	height: 60px;
-	background: #81c786;
+	background: #ccd4b8;
 	text-align: center;
 }
