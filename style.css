@@ -5,11 +5,13 @@ body {
 body {
 	font-family: 'Trebuchet MS';
 	margin: 0 auto;
+	min-height: 100vh;
 }
 main {
 	text-align: left;
 	margin-left: 50px;
 	margin-right: 50px;
+	text-align: justify;
 }
 h1 {
 	text-align: center;
@@ -63,10 +65,81 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 /* veebilehe footer */
 
 footer {
-	position: fixed;
+	position: sticky;
+	top: 100%;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
 	background: #ccd4b8;
 	text-align: center;
 }
+
+/* Karu piltide slideshow
+	Kasutasime abiks https://www.w3schools.com/howto/howto_js_slideshow.asp olevat koodi
+*/
+* {
+	box-sizing: border-box
+}
+
+.slideshow {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
+.eelmine, .järgmine {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.järgmine {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.eelmine:hover, .järgmine:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+.captiontext {
+	text-align: center;
+}
+
