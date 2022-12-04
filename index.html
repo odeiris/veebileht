@@ -1,82 +1,87 @@
 <!DOCTYPE html> 
 
 <html>
-<head>
-    <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pruunkaru</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <header>
-        <h1>PRUUNKARU</h1>
-        <ul id="menüü">
-            <li><a href="index.html">Üldine</a></li>
-            <li><a href="levikjaarvukus.html">Levik ja arvukus</a></li>
-            <li><a href="valimus.html">Välimus ja kehaehitus</a></li>
-            <li><a href="eluviis.html">Eluviis</a></li>
-        </ul>
-        <br />
-        <br />
-    </header>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pruunkaru</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
 
-    <main>
-        <section>
-            <h2>Üldine</h2>
-            <p>
-                Pruunkaru, Eesti suurim kiskja, on üks maailma kaheksast karuliigist (Tammeleht, 2022). Pruunkaru rahvapärane nimetus on mesikäpp.
-                Pruunkaru ehk karu on karulaste perekonda kuuluv loomaliik, kes 2022. aastal valiti aasta loomaks. Pruunkaru on kõigesööja ja valdava
-                osa tema toidust moodustavad mitmesugused marjad, seened, seemned ja putukad. (Pruunkaru, 2022)
-            </p>
+    <body>
+        <header>
+            <h1>PRUUNKARU</h1>
+            <ul id="menüü">
+                <li><a href="index.html">Üldine</a></li>
+                <li><a href="levikjaarvukus.html">Levik ja arvukus</a></li>
+                <li><a href="valimus.html">Välimus ja kehaehitus</a></li>
+                <li><a href="eluviis.html">Eluviis</a></li>
+            </ul>
             <br />
-        </section>
+            <br />
+        </header>
 
-        <section>
-            <div class="slideshow">
-                <div class="mySlides">
-                    <img src="karupilt1.jpg" style="width:100%">
-                    <div class="text">Karu seismas</div>
-                </div>
+        <main>
+            <section>
+                <h2>Üldine</h2>
+                <p>
+                    Pruunkaru, Eesti suurim kiskja, on üks maailma kaheksast karuliigist (Tammeleht, 2022). Pruunkaru rahvapärane nimetus on mesikäpp.
+                    Pruunkaru ehk karu on karulaste perekonda kuuluv loomaliik, kes 2022. aastal valiti aasta loomaks. Pruunkaru on kõigesööja ja valdava
+                    osa tema toidust moodustavad mitmesugused marjad, seened, seemned ja putukad. (Pruunkaru, 2022)
+                </p>
+                <br />
+            </section>
 
-                <div class="mySlides">
-                    <img src="karupilt2.jpg" style="width:100%">
-                    <div class="text">Karu ja karupojad</div>
-                </div>
+            <section>
+                <div class="slideshow">
+                    <div class="mySlides">
+                        <img src="pildid/karupilt1.jpg" style="width:100%">
+                        <div class="text">Karu seismas</div>
+                    </div>
 
-                <div class="mySlides">
-                    <img src="karupilt3.jpg" style="width:100%">
-                    <div class="text">Karu vaatamas</div>
-                </div>
-                <div class="mySlides">
-                    <img src="karupilt4.jpg" style="width:100%">
-                    <div class="text">Karu vee sees</div>
-                </div>
-                <div class="mySlides">
-                    <img src="karupilt5.jpg" style="width:100%">
-                    <div class="text">Karu istumas</div>
-                </div>
+                    <div class="mySlides">
+                        <img src="pildid/karupilt2.jpg" style="width:100%">
+                        <div class="text">Karu ja karupojad</div>
+                    </div>
 
-                <a class="eelmine" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="järgmine" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="mySlides">
+                        <img src="pildid/karupilt3.jpg" style="width:100%">
+                        <div class="text">Karu vaatamas</div>
+                    </div>
+                    <div class="mySlides">
+                        <img src="pildid/karupilt4.jpg" style="width:100%">
+                        <div class="text">Karu vee sees</div>
+                    </div>
+                    <div class="mySlides">
+                        <img src="pildid/karupilt5.jpg" style="width:100%">
+                        <div class="text">Karu istumas</div>
+                    </div>
+
+                    <a class="eelmine" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="järgmine" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div class="pildikirjeldus">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <br/><br/>
+            </section>
+        </main>
+
+        <footer>
+            <br/>
+            <div class="redigeeritud">
+                <p>Viimati redigeeritud 5. detsember 2022.</p>
             </div>
-            <br>
+        </footer>
 
-            <div class="pildikirjeldus">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-            </div>
-            <br/><br/>
-        </section>
-    </main>
+        <script src="slideshow.js"></script>
+    </body>
 
-    <footer>
-        <p>Viimati redigeeritud 5. detsember 2022.</p>
-    </footer>
-
-    <script src="slideshow.js"></script>
-</body>
 </html>

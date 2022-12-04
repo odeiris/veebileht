@@ -1,15 +1,13 @@
 // See kood on võetud https://www.w3schools.com/howto/howto_js_slideshow.asp
-// Pildite slidewhow jaoks
+// Pildite slidewhow jaoks, kui nupule vajutada, siis tuleb järgmine pilt
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
