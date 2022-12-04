@@ -1,5 +1,5 @@
-// See kood on võetud https://www.w3schools.com/howto/howto_js_slideshow.asp
-// Pildite slidewhow jaoks, kui nupule vajutada, siis tuleb järgmine pilt
+// See kood on vï¿½etud https://www.w3schools.com/howto/howto_js_slideshow.asp
+// Pildite slidewhow jaoks, kui nupule vajutada, siis tuleb jï¿½rgmine pilt
 
 let slideIndex = 1;
 showSlides(slideIndex);
