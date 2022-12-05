@@ -1,9 +1,6 @@
 /* Karu piltide slideshow, abiks kasutasime https://www.w3schools.com/howto/howto_js_slideshow.asp */
-/* veel ei tööta nii nagu peaks :S */
 
-* {
-    box-sizing: border-box
-}
+* {box-sizing: border-box}
 
 .slideshow {
     max-width: 60%;
@@ -15,6 +12,10 @@
     display: none;
 }
 
+.pildid {
+    width: 100%;
+}
+
 .eelmine, .järgmine {
     cursor: pointer;
     position: absolute;
@@ -24,7 +25,7 @@
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -36,7 +37,7 @@
 }
 
 .eelmine:hover, .järgmine:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .text {
