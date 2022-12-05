@@ -1,11 +1,8 @@
 body {
-    background-color: #aa825d;
-}
-
-body {
 	font-family: 'Trebuchet MS';
 	margin: 0 auto;
 	min-height: 100vh;
+	background-color: #aa825d;
 }
 
 main {
@@ -13,6 +10,7 @@ main {
 	margin-left: 50px;
 	margin-right: 50px;
 	text-align: justify;
+	line-height: 20px;
 }
 
 h1 {
@@ -24,10 +22,31 @@ h2 {
 	color: #224320;
 }
 
-/*
-veebilehe menüü, mille kaudu saab teistele lehtedele minna
-menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navigation-menu-with-cs/#:~:text=How%20to%20Create%20a%20Horizontal%20Navigation%20Menu%20with,and%20margins%20of%20the%20menu%3A%20...%20Rohkem%20%C3%BCksuseid
-*/
+h3 {
+	color: black;
+}
+
+/* veebilehe footer */
+
+footer {
+	position: sticky;
+	top: 100%;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #ccd4b8;
+	text-align: center;
+}
+
+.allikad {
+	font-size: 14px;
+	line-height: 16px;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: left;
+}
+
+/* menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navigation-menu-with-cs/#:~:text=How%20to%20Create%20a%20Horizontal%20Navigation%20Menu%20with,and%20margins%20of%20the%20menu%3A%20...%20Rohkem%20%C3%BCksuseid */
 
 #menüü {
 	margin: 1px;
@@ -56,32 +75,7 @@ menüü link: https://www.webucator.com/article/how-to-create-a-horizontal-navig
 	color: #613f20;
 }
 
-/* veebilehe footer */
-
-footer {
-	position: sticky;
-	top: 100%;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: #ccd4b8;
-	text-align: center;
-}
-
-.redigeeritud {
-	font-size: 15px;
-}
-
-.allikad {
-	font-size: 14px;
-	line-height: 16px;
-	margin-left: 50px;
-	margin-right: 50px;
-	text-align: left;
-}
-
-/* scrollbar ilusamaks*/
-/* Abiks kasutasime seda videot https://www.youtube.com/watch?v=v_8CmC6cwUs&ab_channel=WebDevSimplified */
+/* Scrollbar ilusamaks, abiks kasutasime https://www.youtube.com/watch?v=v_8CmC6cwUs&ab_channel=WebDevSimplified */
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -100,73 +94,20 @@ footer {
 	background-color: #C1A288;
 }
 
-/* Karu piltide slideshow
-	Kasutasime abiks https://www.w3schools.com/howto/howto_js_slideshow.asp olevat koodi
-*/
+/* Piltide ja videote suurused */
 
-* {
-	box-sizing: border-box
+.videosuurus {
+	width: 560px;
+	height: 315px;
+	border: 0;
 }
 
-.slideshow {
-	max-width: 60%;
-	position: relative;
-	margin: auto;
-}
-
-.mySlides {
-	display: none;
-}
-
-.eelmine, .järgmine {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-}
-
-.järgmine {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-
-.eelmine:hover, .järgmine:hover {
-	background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-	color: #f2f2f2;
-	font-size: 15px;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
+.video {
 	text-align: center;
 }
 
-.dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-	background-color: #717171;
-}
-
-.pildikirjeldus {
-	text-align: center;
+.pilt {
+	float: right;
+	margin-left: 20px;
+	padding: 2px
 }
